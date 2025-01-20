@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+    <string name = "app_name">Список дел</string>
+    <string name = "main_screen_title">Мои дела</string>
+    <string name = "main_screen_title_ready">Выполнено - %d</string>
+    <string name = "details_screen_title_importance">Важность</string>
+    <string name = "details_screen_title_do_before">Сделать до</string>
+    <string name = "details_screen_title_delete">Удалить</string>
+    <string name = "details_screen_button_save">Сохранить</string>
+    <string name = "details_screen_field_description_hint">Что надо сделать...</string>
+</resources>

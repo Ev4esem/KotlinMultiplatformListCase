@@ -1,0 +1,32 @@
+CREATE TABLE IF NOT EXISTS taskEntity (
+  id INTEGER NOT NULL PRIMARY KEY,
+  title TEXT NOT NULL,
+  date TEXT,
+  importance TEXT NOT NULL DEFAULT 'default',
+  isReady INTEGER NOT NULL DEFAULT 0
+);
+
+getAllTask:
+SELECT *
+FROM taskEntity;
+
+getTaskById:
+SELECT *
+FROM taskEntity
+WHERE id = ?;
+
+addTask:
+INSERT OR REPLACE INTO taskEntity(id, title, date, importance, isReady)
+VALUES ?;
+
+deleteTask:
+DELETE FROM taskEntity
+WHERE id = ?;
+
+updateTaskStatus:
+UPDATE taskEntity
+SET isReady = CASE
+                WHEN isReady = 0 THEN 1
+                ELSE 0
+              END
+WHERE id = ?;
