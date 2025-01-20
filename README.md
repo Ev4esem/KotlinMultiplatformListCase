@@ -17,5 +17,5 @@
 ### Screens
 #### IOS
 ![IOS_PHOTO.png](screens/IOS_PHOTO.png)
-#### IOS
+#### Android
 ![ANDROID_PHOTO.png](screens/ANDROID_PHOTO.png)
